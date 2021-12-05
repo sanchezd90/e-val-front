@@ -5,7 +5,7 @@ import "./index.css";
 
 const App = () => {
   return (    
-      <Routes />    
+      <Routes />        
   );
 };
 ReactDOM.render(<App />, document.getElementById("root"));

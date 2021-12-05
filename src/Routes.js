@@ -8,12 +8,11 @@ const Routes = () => {
     console.log("Mounting routes")
     const cookies = new Cookies();
     console.log(cookies)
-    // const user = cookies.get("user")
-
-    // if (user === null) {
-    //   console.log("User not found, redirecting to /login...")
-    //   window.top.location = `${config.BASE_URL}/login`
-    // }
+    const user = cookies.get("user")
+    if (user === null) {
+      console.log("User not found, redirecting to /...")
+      window.top.location = `http://localhost:3000/`
+    }
   }, [])
 
   return (
